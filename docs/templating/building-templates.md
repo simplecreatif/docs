@@ -234,7 +234,7 @@ language. As mentioned before: Much, much more detailed info can be found at
 
     <p class="meta">
         Posted by {{ record.user.displayname }} on
-        {{ record.datecreated|date("M d, ’y")}}
+        {{ record.createdAt|date("M d, ’y")}}
     </p>
 
 </article>
@@ -273,7 +273,7 @@ What happens in this example is the following:
   use.
 - `{{ record.body }}`, line 15: This renders the `body` field of the
   ContentType record
-- `{{ record.datecreated|date("M d, ’y")}}`, line 19: `datecreated` is one
+- `{{ record.createdAt|date("M d, ’y")}}`, line 19: `createdAt` is one
   of the elements that is always present in all ContentTypes, and it
   contains the date the record was created. It's stored in a machine-readable
   format, so to display it the way we want, we use the `date()` filter. In
