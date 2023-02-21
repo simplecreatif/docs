@@ -38,7 +38,7 @@ You can access regular fields in a record like these examples for either a
 {{ page.title }}
 {{ page.text }}
 
-Created on {{ entry.datecreated|date('Y-m-d')}}
+Created on {{ entry.createdAt|date('Y-m-d')}}
 
 The ContentType for this entry is {{ entry.contenttype.name }},
 and it contains {{ entry.contenttype.fields|length }} fields.
